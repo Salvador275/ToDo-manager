@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskCard">
+    <LinearLayout
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_title" />
+
+        <EditText
+            android:textIsSelectable="true"
+            android:focusable="false"
+            android:id="@+id/showTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="@string/task_description" />
+
+        <EditText
+            android:id="@+id/showTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:textStyle="bold"
+            android:id="@+id/deadlineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_deadline" />
+
+        <EditText
+            android:focusable="false"
+            android:textIsSelectable="true"
+            android:id="@+id/showTaskDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_marginTop="20sp"
+                android:id="@+id/executeTaskButton"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:text="Выполнить"
+                app:backgroundTint="@color/primaryColor" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
