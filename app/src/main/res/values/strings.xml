@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ToDo Manager</string>
+    <string name="task_title">Название <font color='#FF0000'>*</font></string>
+    <string name="task_description">Описание</string>
+    <string name="task_deadline">Срок выполнения <font color='#FF0000'>*</font></string>
+    <string name="task_add">Добавить</string>
 </resources>
